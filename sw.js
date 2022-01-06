@@ -12,7 +12,7 @@ self.addEventListener('push', (event) => {
                                    icon: 'images/xmark.png'},
                            ]
                };
-               e.waitUntil(
-                       self.registration.showNotification('Hello world!', options)
-                       );
+               event.waitUntil(
+                 self.registration.showNotification("Hello world!", options)
+               );
 });
